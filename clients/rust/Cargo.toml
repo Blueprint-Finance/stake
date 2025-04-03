@@ -23,4 +23,4 @@ thiserror = "^1.0"
 [dev-dependencies]
 assert_matches = "1.5.0"
 solana-program-test = "2.1"
-solana-sdk = "2.1"
+solana-sdk = { git = "https://github.com/anza-xyz/solana-sdk", rev = "c0f9a14" }
