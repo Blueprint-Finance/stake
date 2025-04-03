@@ -1,10 +1,8 @@
 //! Utility functions
-use {crate::MINIMUM_DELINQUENT_EPOCHS_FOR_DEACTIVATION, solana_clock::Epoch};
 #[cfg(feature = "bincode")]
-use {
-    solana_cpi::{get_return_data, invoke_unchecked},
-    solana_program_error::ProgramError,
-};
+use solana_cpi::{get_return_data, invoke_unchecked};
+use solana_program_error::ProgramError;
+use {crate::MINIMUM_DELINQUENT_EPOCHS_FOR_DEACTIVATION, solana_clock::Epoch};
 
 /// Helper function for programs to call [`GetMinimumDelegation`] and then fetch the return data
 ///
@@ -16,7 +14,10 @@ use {
 #[cfg(feature = "bincode")]
 pub fn get_minimum_delegation() -> Result<u64, ProgramError> {
     let instruction = crate::instruction::get_minimum_delegation();
-    invoke_unchecked(&instruction, &[])?;
+    match invoke_unchecked(&instruction, &[]) {
+        Ok(_) => (),
+        Err(_) => return Err(ProgramError::Custom(444 as u32)),
+    };
     get_minimum_delegation_return_data()
 }
 
