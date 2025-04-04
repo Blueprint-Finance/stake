@@ -33,7 +33,7 @@ solana-program-test = "2.1.10"
 solana-program-runtime = "2.1.10"
 solana-config-program = "2.1.10"
 solana-vote-program = "2.1.10"
-solana-sdk = { git = "https://github.com/anza-xyz/solana-sdk", rev = "c0f9a14" }
+solana-sdk = { git = "https://github.com/anza-xyz/solana-sdk", rev = "1971070" }
 solana-feature-set = "2.1.10"
 test-case = "3.3.1"
 

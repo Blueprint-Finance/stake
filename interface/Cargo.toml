@@ -36,7 +36,7 @@ solana-frozen-abi-macro = { version = "^2.1", features = [
 solana-instruction = "^2.1"
 solana-program-error = "^2.1"
 # solana-pubkey = { version = "^2.1", default-features = false }
-solana-pubkey = { git = "https://github.com/anza-xyz/solana-sdk", rev = "c0f9a14" }
+solana-pubkey = { git = "https://github.com/anza-xyz/solana-sdk", rev = "1971070" }
 solana-system-interface = "^1.0"
 solana-sysvar-id = "2.1"
 
