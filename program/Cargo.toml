@@ -18,8 +18,8 @@ borsh = { version = "1.5.1", features = ["derive", "unstable__schema"] }
 num-derive = "0.4"
 num-traits = "0.2"
 num_enum = "0.7.3"
-solana-program = "2.1.10"
 thiserror = "1.0.63"
+solana-program = { git = "https://github.com/anza-xyz/solana-sdk", rev = "52d8063" }
 
 [dev-dependencies]
 assert_matches = "1.5.0"
@@ -33,7 +33,8 @@ solana-program-test = "2.1.10"
 solana-program-runtime = "2.1.10"
 solana-config-program = "2.1.10"
 solana-vote-program = "2.1.10"
-solana-sdk = { git = "https://github.com/anza-xyz/solana-sdk", rev = "1971070" }
+solana-sdk = { git = "https://github.com/anza-xyz/solana-sdk", rev = "52d8063" }
+solana-program = { git = "https://github.com/anza-xyz/solana-sdk", rev = "52d8063" }
 solana-feature-set = "2.1.10"
 test-case = "3.3.1"
 

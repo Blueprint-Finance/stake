@@ -1,10 +1,6 @@
 [workspace]
 resolver = "2"
-members = [
-    "clients/rust",
-    "interface",
-    "program",
-]
+members = ["clients/rust", "interface", "program"]
 
 [workspace.package]
 authors = ["Anza Maintainers <maintainers@anza.xyz>"]
@@ -21,3 +17,35 @@ build = "1.81.0"
 format = "nightly-2024-08-08"
 lint = "nightly-2024-08-08"
 test = "nightly-2024-08-08"
+
+[patch.crates-io]
+solana-pubkey = { git = "https://github.com/anza-xyz/solana-sdk", rev = "52d8063" }
+
+solana-sdk = { git = "https://github.com/anza-xyz/solana-sdk", rev = "52d8063" }
+solana-instruction = { git = "https://github.com/anza-xyz/solana-sdk", rev = "52d8063" }
+solana-program = { git = "https://github.com/anza-xyz/solana-sdk", rev = "52d8063" }
+solana-program-test = { git = "https://github.com/anza-xyz/agave", rev = "6679ac4" }
+solana-transaction-status = { git = "https://github.com/anza-xyz/agave", rev = "6679ac4" }
+solana-system-interface = { git = "https://github.com/solana-program/system", rev = "f1379566" }
+
+solana-sysvar = { git = "https://github.com/anza-xyz/solana-sdk", rev = "52d8063" }
+solana-sysvar-id = { git = "https://github.com/anza-xyz/solana-sdk", rev = "52d8063" }
+
+solana-stake-interface = { path = "interface" }
+solana-stake-client = { path = "clients/rust" }
+solana-stake-program = { path = "program" }
+
+[workspace.dependencies]
+solana-pubkey = { git = "https://github.com/anza-xyz/solana-sdk", rev = "52d8063" }
+solana-instruction = { git = "https://github.com/anza-xyz/solana-sdk", rev = "52d8063" }
+solana-program = { git = "https://github.com/anza-xyz/solana-sdk", rev = "52d8063" }
+solana-program-test = { git = "https://github.com/anza-xyz/agave", rev = "6679ac4" }
+solana-sdk = { git = "https://github.com/anza-xyz/solana-sdk", rev = "52d8063" }
+solana-system-interface = { git = "https://github.com/solana-program/system", rev = "f1379566" }
+solana-sysvar = { git = "https://github.com/anza-xyz/solana-sdk", rev = "52d8063" }
+solana-clock = { git = "https://github.com/anza-xyz/solana-sdk", rev = "52d8063" }
+solana-transaction-status = { git = "https://github.com/anza-xyz/agave", rev = "6679ac4" }
+
+solana-stake-interface = { path = "interface" }
+solana-stake-client = { path = "clients/rust" }
+solana-stake-program = { path = "program" }

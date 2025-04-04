@@ -24,29 +24,27 @@ borsh0-10 = { package = "borsh", version = "0.10.3", optional = true }
 num-traits = "0.2"
 serde = { version = "1.0.210", optional = true }
 serde_derive = { version = "1.0.210", optional = true }
-solana-decode-error = "^2.1"
-solana-clock = "^2.1"
-solana-cpi = { version = "^2.1", optional = true }
+solana-clock = { git = "https://github.com/anza-xyz/solana-sdk", rev = "52d8063" }
+solana-cpi = { git = "https://github.com/anza-xyz/solana-sdk", rev = "52d8063", optional = true }
 solana-frozen-abi = { version = "^2.1", features = [
     "frozen-abi",
 ], optional = true }
 solana-frozen-abi-macro = { version = "^2.1", features = [
     "frozen-abi",
 ], optional = true }
-solana-instruction = "^2.1"
-solana-program-error = "^2.1"
-# solana-pubkey = { version = "^2.1", default-features = false }
-solana-pubkey = { git = "https://github.com/anza-xyz/solana-sdk", rev = "1971070", default-features = false, features = [
-] }
-solana-system-interface = "^1.0"
-solana-sysvar-id = "2.1"
+solana-instruction = { git = "https://github.com/anza-xyz/solana-sdk", rev = "52d8063" }
+solana-program-error = { git = "https://github.com/anza-xyz/solana-sdk", rev = "52d8063" }
+solana-pubkey = { git = "https://github.com/anza-xyz/solana-sdk", rev = "52d8063" }
+solana-system-interface = { git = "https://github.com/solana-program/system", rev = "f137956" }
+solana-sysvar-id = { git = "https://github.com/anza-xyz/solana-sdk", rev = "52d8063" }
+solana-decode-error = { git = "https://github.com/anza-xyz/solana-sdk", rev = "52d8063" }
 
 [dev-dependencies]
 assert_matches = "1.5.0"
 bincode = "1.3.3"
-solana-account = { version = "^2.1", features = ["bincode"] }
-solana-borsh = "^2.1"
-solana-program = { version = "^2.1", default-features = false }
+solana-account = { git = "https://github.com/anza-xyz/solana-sdk", rev = "52d8063" }
+# solana-account = { version = "^2.1", features = ["bincode"] }
+solana-borsh = { git = "https://github.com/anza-xyz/solana-sdk", rev = "52d8063" }
 static_assertions = "1.1.0"
 strum = "0.24"
 strum_macros = "0.24"
