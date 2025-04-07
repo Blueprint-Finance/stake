@@ -45,7 +45,7 @@ solana-system-interface = { git = "https://github.com/solana-program/system", re
 solana-sysvar = { git = "https://github.com/anza-xyz/solana-sdk", rev = "52d8063" }
 solana-clock = { git = "https://github.com/anza-xyz/solana-sdk", rev = "52d8063" }
 solana-transaction-status = { git = "https://github.com/anza-xyz/agave", rev = "6679ac4" }
-solana-message = { git = "https://github.com/anza-xyz/solana-sdk", rev = "834edeb" }
+solana-message = { git = "https://github.com/anza-xyz/solana-sdk", rev = "52d8063" }
 
 solana-stake-interface = { path = "interface" }
 solana-stake-client = { path = "clients/rust" }
