@@ -1,6 +1,6 @@
 [package]
 name = "solana-stake-client"
-version = "0.0.0"
+version = "0.0.1"
 description = "A generated Rust library for the Stake program"
 repository = "https://github.com/solana-program/stake"
 edition = "2021"
